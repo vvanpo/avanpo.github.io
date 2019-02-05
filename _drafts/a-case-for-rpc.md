@@ -24,6 +24,12 @@ categories: [RPC, REST, API design]
     - If you always structure your endpoints in the hierarchy of `<class>/<object>/<method>`, you're maintaining consistency in a similar way to how REST tries to force consistency.
     - gRPC and other strongly-typed protocols are waaay better than media types or half-assed service descriptions
 
+[^1]
+[^2]
+[^3]
+
 ## References
 
 [^1]: [Architectural Styles and the Design of Network-based Software Architectures](https://roy.gbiv.com/pubs/dissertation/top.htm)
+[^2]: [Uniform Resource Identifier (URI): Generic Syntax](https://tools.ietf.org/html/rfc3986)
+[^3]: [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://httpwg.org/specs/rfc7231.html)
