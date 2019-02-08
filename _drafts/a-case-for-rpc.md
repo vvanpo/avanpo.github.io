@@ -3,12 +3,12 @@ title: "A Case for RPC"
 post_author:
     name: "Victor van Poppelen"
     link: "https://github.com/vvanpo"
-categories: [RPC, REST, API design]
+categories: [RPC, REST, Network-based software architecture]
 ---
 
-## What is RPC?
+## What is <abbr title="Remote Procedural Call">RPC</abbr>?
 
-## What is REST?
+## What is <abbr title="Representational State Transfer">REST</abbr>?
 
 
 #### Notes
@@ -19,7 +19,7 @@ categories: [RPC, REST, API design]
     - A resource is analogous to an object in OOP parlance
       - Object, component, module, entity, resource, element, are all vague and generic terms to signify encapsulation, and are conceptually equivalent
     - HTTP verbs are just a restricted set of object methods
-      - "REST" has been successful probably because it restricts APIs to simple and consistent operations (due to HTTP verbs just being CRUD), and making large changes to behaviour would need to be done through parameters, which is generally discouraged and considered bad design
+      - "REST" has been successful probably because it restricts APIs to a few simple and consistent operations (as HTTP verbs are just CRUD), and making large deviations from these standard behaviours requires encoding behavioural descriptions within parameters, which is generally discouraged and considered bad design
     - Status codes cover the bare minimum of error states, and any reasonably complex API exposes their own error codes on top of status codes, leading to redundancy and general messiness
   - If you look at HTTP APIs in the same way that you look at OOP APIs, there isn't any good reason to be scared of RPC, and the ability to declare whatever methods you like gives you more flexibililty
     - If you always structure your endpoints in the hierarchy of `<class>/<object>/<method>`, you're maintaining consistency in a similar way to how REST tries to force consistency.
