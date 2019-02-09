@@ -10,6 +10,10 @@
   background: transparent;
 }
 
+abbr {
+  text-underline-position: under;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -29,10 +33,6 @@ sup {
   vertical-align: super;
   font-size: smaller;
   line-height: normal;
-}
-
-abbr {
-  border-bottom: 1px dashed;
 }
 
 table {
