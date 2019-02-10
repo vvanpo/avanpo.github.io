@@ -8,11 +8,14 @@ categories: [REST, RPC, Network-based software architecture]
 
 The term <abbr title="Representational State Transfer">REST</abbr> originates from Roy Fielding's dissertation[^1] on network-based software architecture, where it is used to describe an architectural style for hypermedia applications. Fielding's research into REST influenced his development of pivotal Internet standards---namely <abbr title="Hypertext Transfer Protocol">HTTP</abbr>[^2] and <abbr title="Uniform Resource Identifier">URI</abbr>[^3]---that established the technologies underpinning the Web.
 
-The constraints characterizing REST were carefully chosen to meet the demands of a worldwide distributed hypermedia system, i.e. the Web. The analysis of architectural properties required for the Web did not consider whether they would be suitable for non-hypermedia-based applications. Indeed, an application not centred on hypermedia as its primary control mechanism cannot properly adhere to all of the constraints.
+The constraints characterizing REST were carefully chosen to meet the demands of a worldwide distributed hypermedia system, i.e. the Web. The analysis of architectural properties required by the Web did not consider whether they would be suitable for non-hypermedia-based applications. Indeed, an application not centred on hypermedia as its primary control mechanism cannot adhere to all of REST's constraints.
 
-The differentiating constraint of REST is how it mandates interface uniformity. As hypermedia often couples control data with content presentation, client and server need to agree on data format together with operations for retrieval and manipulation. In practice this is achieved with media type specifications[^4] and standardized HTTP methods (`GET`, `POST`, `PUT`, and `DELETE`).
+A differentiating constraint of REST is how it mandates interface uniformity.
+- Any information can be abstracted as a _resource_, which combines identification of itself with representations of its state.
+- Hypermedia incorporates control information with presentation, which restricts the ability to encapsulate state.
 
-Concrete examples of how interface generality is implemented in the Web include the standardizations of resource reference formats (URI), hypermedia data formats (<abbr title="Hypertext Markup Language">HTML</abbr>), resource manipulation (standard HTTP methods), and HTTP headers that facilitate content negotiation, cache control, and other resource or representation metadata.
+- Client and server need to agree on data format. In practice this is achieved with media type specifications[^4] and standardized HTTP methods (`GET`, `POST`, `PUT`, and `DELETE`).
+- Concrete examples of how interface generality is implemented in the Web include the standardizations of resource reference formats (URI), hypermedia data formats (<abbr title="Hypertext Markup Language">HTML</abbr>), resource manipulation (standard HTTP methods), and HTTP headers that facilitate content negotiation, cache control, and other resource or representation metadata.
 
 ## What is <abbr title="Remote Procedural Call">RPC</abbr>?
 
