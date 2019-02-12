@@ -8,9 +8,10 @@ categories: [REST, RPC, Network-based software architecture]
 
 The term <abbr title="Representational State Transfer">REST</abbr> originates from Roy Fielding's dissertation[^1] on network-based software architecture, where it is used to describe an architectural style for hypermedia applications. Fielding's research into REST influenced his development of pivotal Internet standards---namely <abbr title="Hypertext Transfer Protocol">HTTP</abbr>[^2] and <abbr title="Uniform Resource Identifier">URI</abbr>[^3]---that established the technologies underpinning the Web.
 
-The constraints characterizing REST were carefully chosen to meet the demands of a worldwide distributed hypermedia system, i.e. the Web. The analysis of architectural properties required by the Web did not consider whether they would be suitable for non-hypermedia-based applications. Indeed, an application not centred on hypermedia as its primary control mechanism cannot adhere to all of REST's constraints.
+The constraints characterizing REST were carefully chosen to meet the demands of a worldwide distributed hypermedia system. The Web needs to facilitate information identification and access, utilizing the most flexible and generic interfaces possible. As such, a differentiating constraint of REST is how it mandates interface uniformity.
 
-A differentiating constraint of REST is how it mandates interface uniformity.
+The analysis of architectural properties required by the Web did not consider whether they would be suitable for non-hypermedia-based applications. Indeed, an application not centred on hypermedia as its primary control mechanism cannot adhere to all of REST's constraints.
+
 - Any information can be abstracted as a _resource_, which combines identification of itself with representations of its state.
 - Hypermedia incorporates control information with presentation, which restricts the ability to encapsulate state.
 
