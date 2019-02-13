@@ -17,7 +17,7 @@ categories: [REST, RPC, Network-based software architecture]
   - REST's uniformity is intuitive and protects API designs from becoming too complicated, but attempts to do anything out of the ordinary results in convoluted methods of skirting the constraints
 3. The current state of REST
   - No one implements HATEOAS, and that means that what almost everyone considers "REST" is really just RPC in disguise
-  - JSON does not have primitives for hyperlinks, so further standardization is needed to implement HATEOAS (e.g. JSON API)
+  - JSON does not have primitives for hyperlinks, so further standardization is needed to implement HATEOAS (e.g. [JSON:API](https://jsonapi.org/format/))
   - OpenAPI and other resource description standards are the antithesis of REST, as they necessitate the client to have thorough knowledge of the API before any interactions take place
 4. Abstractions are universal
   - Object, component, module, entity, resource, element, are all vague terms variously used to signify abstraction, and are conceptually equivalent. URIs can be used to identify abstraction without needing to adhere to other REST constraints
@@ -49,9 +49,9 @@ The analysis of architectural properties required by the Web did not consider wh
     - HTTP verbs are just a restricted set of object methods
       - "REST" has been successful probably because it restricts APIs to a few simple and consistent operations (as HTTP verbs are just CRUD), and making large deviations from these standard behaviours requires encoding behavioural descriptions within parameters, which is generally discouraged and considered bad design
     - Status codes cover the bare minimum of error states, and any reasonably complex API exposes their own error codes on top of status codes, leading to redundancy and general messiness
-  - If you look at HTTP APIs in the same way that you look at OOP APIs, there isn't any good reason to be scared of RPC, and the ability to declare whatever methods you like gives you more flexibililty
-    - If you always structure your endpoints in the hierarchy of `<class>/<object>/<method>`, you're maintaining consistency in a similar way to how REST tries to force consistency.
-    - gRPC and other strongly-typed protocols are waaay better than media types or half-assed service descriptions
+    - If you look at HTTP APIs in the same way that you look at OOP APIs, there isn't any good reason to be scared of RPC, and the ability to declare whatever methods you like gives you more flexibililty
+      - If you always structure your endpoints in the hierarchy of `<class>/<object>/<method>`, you're maintaining consistency in a similar way to how REST tries to force consistency.
+      - gRPC and other strongly-typed protocols are waaay better than media types or half-assed service descriptions
 
 ## References
 
