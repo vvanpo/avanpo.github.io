@@ -71,7 +71,8 @@ footer {
 
 /* links */
 
-a:link, a:visited {
+a:link,
+a:visited {
   margin: -1px -2px 0 -2px;
   padding: 1px 2px 0 2px;
   color: #3677a9;
@@ -84,7 +85,8 @@ a:hover {
   background-color: #3677a9;
 }
 
-div.content h1 a:link, div.content h1 a:visited {
+div.content h1 a:link,
+div.content h1 a:visited {
   margin: 0;
   padding: 0;
   color: #444;
@@ -116,12 +118,14 @@ nav ul li a {
   letter-spacing: 1px;
 }
 
-nav ul li a:link, nav ul li a:visited {
+nav ul li a:link,
+nav ul li a:visited {
   color: #ccc;
   font-weight: normal;
 }
 
-nav ul li.active a, nav ul li a:hover {
+nav ul li.active a,
+nav ul li a:hover {
   color: #444;
   background-color: transparent;
 }
@@ -200,7 +204,9 @@ div.content h4 {
   font-weight: 700;
 }
 
-div.content p, div.content ul, div.content ol {
+div.content p,
+div.content ul,
+div.content ol {
   margin: 0 0 1em 0;
   line-height: 170%;
 }
@@ -214,14 +220,14 @@ div.content img {
   margin: 1.6em auto;
 }
 
-div.content ul li {
-  margin: 0 0 4px 40px;
-  list-style: disc;
-}
-
-div.content ol li {
+div.content ol > li {
   margin: 0 0 4px 40px;
   list-style: decimal;
+}
+
+div.content ul > li {
+  margin: 0 0 4px 40px;
+  list-style: disc;
 }
 
 div.content pre {
