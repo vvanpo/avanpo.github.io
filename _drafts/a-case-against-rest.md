@@ -18,25 +18,25 @@ The term <abbr title="Representational State Transfer">REST</abbr> originates fr
 
 2.1 Tight coupling of the control interface means an application surrenders interoperability
 
-2.2 The interface generality constraint of REST forces applications to have coarse-grained data transfer, weakly-defined types, and restricts operations to CRUD
+2.2 The interface generality constraint of REST forces applications to have coarse-grained data transfer, weakly-defined types, and restricts operations to <abbr title="Create, Read, Update, and Delete">CRUD</abbr>
 
 2.3 REST's uniformity is intuitive and protects API designs from becoming too complicated, but attempts to do anything out of the ordinary results in convoluted methods of skirting the constraints
 
 ## The current state of REST
 
-3.1 No one implements HATEOAS, and that means that what almost everyone considers "REST" is really just <abbr title="Remote Procedural Call">RPC</abbr> in disguise
+3.1 No one implements <abbr title="Hypermedia As The Engine Of Application State">HATEOAS</abbr>, and that means that what almost everyone considers "REST" is really just <abbr title="Remote Procedural Call">RPC</abbr> in disguise
 
-3.2 JSON does not have primitives for hyperlinks, so further standardization is needed to implement HATEOAS (e.g. [JSON:API](https://jsonapi.org/format/))
+3.2 <abbr title="JavaScript Object Notation">JSON</abbr> does not have primitives for hyperlinks, so further standardization is needed to implement HATEOAS (e.g. [JSON:API](https://jsonapi.org/format/))
 
-3.3 OpenAPI and other resource description standards are the antithesis of REST, as they necessitate the client to have thorough knowledge of the API before any interactions take place
+3.3 OpenAPI and other resource description standards are the antithesis of REST, as they necessitate the client to have thorough knowledge of the <abbr title="Application Programming Interface">API</abbr> before any interactions take place
 
-## Abstractions are universal
+## Abstraction is universal
 
-4.1 Object, component, module, entity, resource, element, are all vague terms variously used to signify abstraction, and are conceptually equivalent. URIs can be used to identify abstraction without needing to adhere to other REST constraints
+4.1 Resource, object, component, module, entity, and element are all vague terms variously used to signify abstraction, and are conceptually equivalent. URIs can be used to identify abstraction without needing to adhere to other REST constraints
 
 4.2 You can take advantage of HTTP and its capability for transparent use of Web infrastructure (caching, load balancers, proxies, firewalls) without also restricting your application to CRUD
 
-4.3 Strongly typed message formats (e.g. gRPC) improve upon media types and don't require coarse-grained data transfer
+4.3 Strongly typed message formats (e.g. [gRPC](https://grpc.io/docs/guides/)) improve upon media types and don't require coarse-grained data transfer
 
 
 
