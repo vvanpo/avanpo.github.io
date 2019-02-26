@@ -6,9 +6,11 @@ post_author:
 categories: [REST, RPC, Network-based software architecture]
 ---
 
-**1.1** REST is the architecture of the Web.
+**1.1** The term <abbr title="Representational State Transfer">REST</abbr> is the name given to the architectural style of the Web.
+- It originates from Roy Fielding's dissertation[^1] on network-based software architecture, in which he describes the motivations behind the Web's design.
+- Fielding's research into REST influenced his development of pivotal Internet standards---namely <abbr title="Hypertext Transfer Protocol">HTTP</abbr>[^2] and <abbr title="Uniform Resource Identifier">URI</abbr>[^3]---that established the technologies underpinning the Web.
 
-**1.2** The Web's scale requires complete decoupling of client and server, to accommodate interoperability between all participating components. 
+**1.2** The Web's scale requires decoupling of components to accommodate interoperability.
 
 **1.3** Hypermedia is uniquely suited to how humans interact with information, but difficult for machines.
 
@@ -42,7 +44,6 @@ categories: [REST, RPC, Network-based software architecture]
 
 ### Notes
 
-The term <abbr title="Representational State Transfer">REST</abbr> originates from Roy Fielding's dissertation[^1] on network-based software architecture, where it is used to describe an architectural style for distributed hypermedia. Fielding's research into REST influenced his development of pivotal Internet standards---namely <abbr title="Hypertext Transfer Protocol">HTTP</abbr>[^2] and <abbr title="Uniform Resource Identifier">URI</abbr>[^3]---that established the technologies underpinning the Web.
 
 The constraints characterizing REST were carefully chosen to meet the demands of a worldwide distributed hypermedia system. The Web needs to facilitate the identification and access of information in an unrestricted and universal manner. As such, a differentiating constraint of REST is how it prescribes interface uniformity. REST introduces the concept of a _resource_, which is an abstract mapping to a set of entities. A resource is defined by the semantics of this mapping, rather than the entities themselves (which can change with time). Identifying information as resources rather than concrete representations allows for longevity of references. The Web performs resource identification using a standardized format for hyperlink references, called URI.
 
